@@ -54,8 +54,8 @@ $user->setStudentId(1);
 $user->setStatus(1);
 
 ```
-##以exec开头的是请求事件
+##### Xthk\Ucenter\UriConfig中的常量是请求的action
+##发送请求事件
 ```php
-$user->execRegister();
-$user->execLoginByPwd();
+$user->send(UriConfig::USER_REGISTER);
 ```

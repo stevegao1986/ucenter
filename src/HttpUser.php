@@ -4,6 +4,11 @@ namespace Xthk\Ucenter;
 
 use GuzzleHttp\Client;
 
+/**
+ * 组装请求头部和数据
+ * Class HttpUser
+ * @package Xthk\Ucenter
+ */
 class HttpUser
 {
     /**

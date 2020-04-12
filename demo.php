@@ -40,9 +40,6 @@ $user->setPushType('ios or android');
 $user->setStudentId(1);
 $user->setStatus(1);
 
+$res = $user->send('gets', 'post');
 
-
-$user->execRegister();
-$user->execLoginByPwd();
-$user->execLoginByPwd();
-
+echo $res;
