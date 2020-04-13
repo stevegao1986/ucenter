@@ -69,7 +69,7 @@ class HttpUser
      */
     private function getSign($data)
     {
-        $this->signature = Signature::sign($data, $this->appSecret);
+        $this->signature = Signature::sign( $data, $this->appSecret );
     }
 
     /**
@@ -96,30 +96,29 @@ class HttpUser
     public function send($data, $method = 'post')
     {
         try {
-            $data['time_random'] = microtime(true); //生成时间戳随机数
+            $data['time_random'] = microtime( true ); //生成时间戳随机数
 
-            $this->getSign($data);
+            $this->getSign( $data );
 
             $params['headers'] = $this->generateHeader();
 
-            if (strtoupper($method) == 'POST') {
+            if ( strtoupper( $method ) == 'POST' ) {
                 $params['form_params'] = $data;
             } else {
                 $params['query'] = $data;
             }
 
             $curl = new Client();
-            $url  = rtrim($this->domain, '/') . '/' . ltrim($this->uri, '/');
+            $url  = rtrim( $this->domain, '/' ) . '/' . ltrim( $this->uri, '/' );
 
-            $response = $curl->request($method, $url, $params);
+            $response = $curl->request( $method, $url, $params );
 
-            return (string)$response->getBody();
-        }catch (\Exception $e) {
-            echo $e->getMessage();exit;
+            return (string) $response->getBody();
+        } catch ( \Exception $e ) {
+            echo $e->getMessage();
+            exit;
         }
     }
-
-
 
 
 }

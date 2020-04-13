@@ -18,6 +18,8 @@ class BaseParam
     public function setMobile($mobile)
     {
         $this->params['mobile'] = $mobile;
+
+        return $this;
     }
 
     /**
@@ -26,6 +28,8 @@ class BaseParam
     public function setPassword($password)
     {
         $this->params['password'] = $password;
+
+        return $this;
     }
 
     /**
@@ -34,6 +38,8 @@ class BaseParam
     public function setPasswordConfirmation($passwordConfirmation)
     {
         $this->params['password_confirmation'] = $passwordConfirmation;
+
+        return $this;
     }
 
     /**
@@ -42,6 +48,8 @@ class BaseParam
     public function setOriginalPassword($original_password)
     {
         $this->params['original_password'] = $original_password;
+
+        return $this;
     }
 
     /**
@@ -50,6 +58,8 @@ class BaseParam
     public function setSmsCode($smsCode)
     {
         $this->params['sms_code'] = $smsCode;
+
+        return $this;
     }
 
     /**
@@ -58,6 +68,8 @@ class BaseParam
     public function setSmsType($smsType)
     {
         $this->params['sms_type'] = $smsType;
+
+        return $this;
     }
 
     /**
@@ -66,6 +78,8 @@ class BaseParam
     public function setRegisterIp($registerIp)
     {
         $this->params['register_ip'] = $registerIp;
+
+        return $this;
     }
 
     /**
@@ -74,6 +88,8 @@ class BaseParam
     public function setLoginIp($loginIp)
     {
         $this->params['login_ip'] = $loginIp;
+
+        return $this;
     }
 
     /**
@@ -82,6 +98,8 @@ class BaseParam
     public function setPushId($pushId)
     {
         $this->params['push_id'] = $pushId;
+
+        return $this;
     }
 
     /**
@@ -90,6 +108,8 @@ class BaseParam
     public function setPushType($pushType)
     {
         $this->params['push_type'] = $pushType;
+
+        return $this;
     }
 
     /**
@@ -98,6 +118,8 @@ class BaseParam
     public function setOpenId($openId)
     {
         $this->params['open_id'] = $openId;
+
+        return $this;
     }
 
     /**
@@ -106,6 +128,8 @@ class BaseParam
     public function setWechatType($wechatType)
     {
         $this->params['wechat_type'] = $wechatType;
+
+        return $this;
     }
 
     /**
@@ -114,6 +138,8 @@ class BaseParam
     public function setUserId($userId)
     {
         $this->params['user_id'] = $userId;
+
+        return $this;
     }
 
     /**
@@ -122,6 +148,8 @@ class BaseParam
     public function setStatus($status)
     {
         $this->params['status'] = $status;
+
+        return $this;
     }
 
     /**
@@ -130,6 +158,8 @@ class BaseParam
     public function setCityId($cityId)
     {
         $this->params['city_id'] = $cityId;
+
+        return $this;
     }
 
     /**
@@ -138,6 +168,8 @@ class BaseParam
     public function setRealName($realName)
     {
         $this->params['real_name'] = $realName;
+
+        return $this;
     }
 
     /**
@@ -146,6 +178,8 @@ class BaseParam
     public function setGender($gender)
     {
         $this->params['gender'] = $gender;
+
+        return $this;
     }
 
     /**
@@ -154,6 +188,8 @@ class BaseParam
     public function setBirthday($birthday)
     {
         $this->params['birthday'] = $birthday;
+
+        return $this;
     }
 
     /**
@@ -162,6 +198,8 @@ class BaseParam
     public function setEmergencyMobile($emergencyMobile)
     {
         $this->params['emergency_mobile'] = $emergencyMobile;
+
+        return $this;
     }
 
     /**
@@ -170,5 +208,7 @@ class BaseParam
     public function setStudentId($studentId)
     {
         $this->params['student_id'] = $studentId;
+
+        return $this;
     }
 }
